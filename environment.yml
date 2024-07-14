@@ -1,0 +1,19 @@
+# setup: conda env create --file environment.yml
+# update: conda env update --file environment.yml --prune
+name: sso-rag-pipeline
+channels:
+- pytorch # required for faiss-cpu
+dependencies:
+- python>=3.8
+- anaconda
+- pip
+- pip:
+  # ai
+  - transformers[torch]
+  - torch
+  - datasets
+  # scraping
+  - scrapy
+  # dev dependencies
+  - pre-commit
+  - black
