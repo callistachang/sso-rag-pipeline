@@ -13,6 +13,7 @@ def clean_data(html_content: str) -> str:
     for div in divs:
         header = div.find("span", class_="").text.strip()
         content = div.find("td", class_="prov1Txt").text.strip()
+        print(content)
         act_text = f"{header}\n{content}"
         parts.append(act_text)
 

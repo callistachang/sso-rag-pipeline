@@ -12,6 +12,10 @@ dependencies:
   - transformers[torch]
   - torch
   - datasets
+  - spacy
+  - sentence-transformers
+  - llama-index
+  - llama-index-embeddings-huggingface
   # scraping
   - scrapy
   # dev dependencies

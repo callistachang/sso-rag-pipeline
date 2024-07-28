@@ -1,3 +1,8 @@
+cleaned_text/
+out_text/
+out_html/
+*.parquet
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

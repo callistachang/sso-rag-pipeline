@@ -8,6 +8,6 @@
 from itemadapter import ItemAdapter
 
 
-class SgLawScraperPipeline:
+class SsoScraperPipeline:
     def process_item(self, item, spider):
         return item

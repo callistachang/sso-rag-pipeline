@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    "sso_scraper.middlewares.SgLawScraperSpiderMiddleware": 543,
+#    "sso_scraper.middlewares.SsoScraperSpiderMiddleware": 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    "sso_scraper.middlewares.SgLawScraperDownloaderMiddleware": 543,
+#    "sso_scraper.middlewares.SsoScraperDownloaderMiddleware": 543,
 # }
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 # ITEM_PIPELINES = {
-#    "sso_scraper.pipelines.SgLawScraperPipeline": 300,
+#    "sso_scraper.pipelines.SsoScraperPipeline": 300,
 # }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

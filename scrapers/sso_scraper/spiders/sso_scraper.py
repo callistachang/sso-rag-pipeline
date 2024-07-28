@@ -5,8 +5,7 @@ from urllib.parse import urlparse, urlunparse, urlencode
 import requests
 import json
 import logging
-from bs4 import BeautifulSoup
-from sso_scraper.cleaner import clean_data
+from scrapers.sso_scraper.data_cleaner import clean_data
 
 # TODO: this class does everything (scraping and data cleaning) at the moment, but it's
 # probably better to separate it out at some point

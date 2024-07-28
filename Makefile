@@ -25,9 +25,15 @@ update: $(ENV_FILE)
 	@echo "Updating conda environment..."
 	conda env update --file $(ENV_FILE) --prune
 
+.PHONY: scrape
+scrape:
+	@echo "Running 'scrapy crawl sso'..."
+	cd ./scrapers && scrapy crawl sso
+
 .PHONY: help
 help:
 	@echo "Available targets:"
 	@echo "  make         - Create conda environment if doesn't exist and install pre-commit hooks"
 	@echo "  make update  - Update the conda environment"
 	@echo "  make help    - Display this help message"
+	@echo "  make scrape  - Scrape latest SSO data"
